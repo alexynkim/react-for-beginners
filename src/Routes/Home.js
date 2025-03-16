@@ -9,6 +9,9 @@ function Home() {
           <li>
             <Link to="/movies">Movie Theater</Link>
           </li>
+          <li>
+            <Link to="/crypto">Crypto Currenies</Link>
+          </li>
         </ul>
       </nav>
     </div>

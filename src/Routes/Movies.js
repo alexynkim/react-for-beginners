@@ -32,7 +32,7 @@ function MovieList({ moviedata }) {
     <div>
       {moviedata.map((movie) => (
         <div key={movie.id}>
-          <img src={movie.medium_cover_image} />;<h1>{movie.title}</h1>
+          <img src={movie.medium_cover_image} alt="" />;<h1>{movie.title}</h1>
           <ul>
             {movie.genres.map((g, i) => (
               <li key={i}>{g}</li>

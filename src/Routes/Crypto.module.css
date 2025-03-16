@@ -1,0 +1,27 @@
+.customTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.customTable th,
+.customTable td {
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 50px;
+  text-align: left;
+}
+
+.customTable th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.customTable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.customTable tr:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.2s ease;
+}
