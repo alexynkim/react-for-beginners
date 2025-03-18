@@ -12,7 +12,7 @@ function Crypto() {
 
     const json = await (await fetch(url + opt)).json();
 
-    console.log(json);
+    // console.log(json);
     console.log(json[0]);
     setCoins(json);
     isSync.current = true;
@@ -24,7 +24,7 @@ function Crypto() {
   };
 
   useEffect(() => {
-    getCoins();
+    getCoins(); // eslint-disable-next-line
   }, [currency]);
 
   console.log(`Rending ... currency : ${currency}, isSync: ${isSync.current}`);
@@ -49,8 +49,8 @@ function Crypto() {
 }
 
 function CryptoList({ coindata, currency }) {
-  console.log(coindata[0]);
-  console.log(`currency : ${currency}`);
+  // console.log(coindata[0]);
+  // console.log(`currency : ${currency}`);
   return (
     <div>
       <table className={style.customTable}>
